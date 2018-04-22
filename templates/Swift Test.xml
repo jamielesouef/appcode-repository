@@ -1,0 +1,36 @@
+<templateSet group="Swift Test">
+  <template name="desc" value="describe(&quot;$DESC$&quot;) {&#10; $END$&#10;}" description="Describe" toReformat="false" toShortenFQNames="true">
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it(&quot;$DESC$&quot;) {&#10;  $END$&#10;}" description="it" toReformat="false" toShortenFQNames="true">
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+  <template name="con" value="context(&quot;$DESC$&quot;) {&#10;  $END$&#10;}" description="context" toReformat="false" toShortenFQNames="true">
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+  <template name="bfe" value="beforeEach {&#10;  $END$      &#10;}" description="beforeEach" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+  <template name="afe" value="afterEach {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+  <template name="spec" value="import Foundation&#10;import Nimble&#10;import Quick&#10;&#10;class $FILENAME$: QuickSpec {&#10;  override func spec() {&#10;    describe(&quot;$FILENAME$&quot;) {&#10;      $END$&#10;    }&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="swift.lang.context" value="true" />
+    </context>
+  </template>
+</templateSet>
